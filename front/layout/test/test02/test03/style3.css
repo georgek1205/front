@@ -1,0 +1,68 @@
+#wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header
+{
+    height: 100px;
+}
+
+header > #logo
+{
+    width : 200px;
+    background-color: coral;
+}
+
+header > nav
+{
+    width: 1000px;
+    background-color: bisque;
+}
+
+section > .content
+{
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+}
+
+article
+{
+    width: 600px;
+}
+
+article > .article1
+{
+    height: 200px;
+    background-color: rgb(206, 26, 113);
+}
+
+article > .article2
+{
+    height: 200px;
+    background-color:chartreuse;
+}
+
+footer
+{
+    height: 80px;
+}
+
+footer > .edge-footer
+{
+    width: 200px;
+    background-color: plum;
+}
+
+footer > .mid-footer
+{
+    width: 800px;
+    background-color: darkviolet;
+}
+
+.flex-row
+{
+    display: flex;
+}

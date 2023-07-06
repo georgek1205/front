@@ -1,0 +1,57 @@
+.box1
+{
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+}
+
+.box2
+{
+    width: 200px;
+    height: 150px;
+    background-color: red;
+}
+
+.flex-row
+{
+    display: flex;
+}
+
+.box-margin
+{
+    /* margin:20px; 사방으로 20픽셀만큼 떨어지기
+     */
+    margin-bottom: 20px;
+}
+
+.box3
+{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(21, 173, 51);
+}
+
+.box4
+{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(244, 233, 21);
+}
+
+.box-padding
+{
+    /* padding: 20px; */
+    padding-top: 20px;
+}
+
+.box-align
+{
+    /* text-align: center; 이건 텍스트 정렬하는거. 밑에거든 레이아웃들*/
+    /* justify-content: center; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    
+}

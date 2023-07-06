@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>div 다루기</title>
+        <link rel = "stylesheet" href = "style.css" type = "text/css">
+    </head>
+
+    <body>
+        <h3>1. div 공간 만들기</h3>
+        <div class = "box1"></div>
+        <div class = "box2"></div>
+
+        <h3>2. div 가로 배치</h3>
+        <!-- div로 감싸기 -->
+        <div class = "flex-row">
+            <div class = "box1"></div>
+            <div class = "box2"></div>
+        </div>
+
+        <h3>3. 여백</h3>
+        <h4>외부 여백</h4>
+        <div class = "box1 box-margin"></div>
+        <div class = "box2"></div>
+
+
+        <h4>내부여백</h4>
+        <div class = "flex-row">
+            <div class = "box1 box-padding">이것은 박스1</div>
+            <div class = "box2">이것은 박스2</div>
+        </div>
+
+        <h4>4.정렬하기</h4>
+        <div class = "flex-row box-align">
+            <div class = "box1"></div>
+            <div class = "box2"></div>
+            <div class = "box1"></div>
+        </div>
+    </body>
+</html>

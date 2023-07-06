@@ -1,0 +1,48 @@
+#wrap
+{
+    width: 1200px;
+}
+
+.logo
+{
+    height: 100px;
+}
+
+.top-menu
+{
+    height: 100px;
+}
+
+.contents
+{
+    height: 500px;
+}
+
+.main-contents
+{
+    width: 600px;
+    height: 500px;
+}
+
+
+.main-contents2
+{
+    height: 500px;
+}
+
+.main-contents2 > .sub-contents
+{
+    width: 600px;
+    height: 250px;
+}
+
+.main-contents2 > .sub-contents2
+{
+    width: 600px;
+    height: 250px;
+}
+
+.left-footer
+{
+    height: 100px;
+}
