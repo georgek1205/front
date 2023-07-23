@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>행사 일정 입력</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>행사 일정 입력</h1>
+        <label>행사 제목</label><br>
+        <input type="text" style = "width: 500px; height: 30px;"><br><br>
+        <label>시작 일</label><input type="text" id = "startDate" style="height: 30px;" class = "ml-1">
+        <label class="ml-4">종료 일 </label><input type="text" id = "endDate" style="height: 30px;" class = "ml-1"><br>
+        <button type="button" style = "width: 500px; height: 30px;" class = "btn btn-info mt-3">저장</button>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#startDate").datepicker({
+                    dateFormat: "yy-mm-dd",
+                    dayNamesMin: ['일','월','화','수','목','금','토'],
+                    showButtonPanel: true,
+                    minDate: 0,
+                    onSelect: function(selectedDate){
+                    $('#endDate').datepicker('option', 'minDate', selectedDate);
+                    }
+                });
+
+                $("#endDate").datepicker({
+                    dateFormat: "yy-mm-dd",
+                    dayNamesMin: ['일','월','화','수','목','금','토']
+                    
+                });
+
+
+
+
+            });
+
+            
+        </script>
+
+
+    </body>
+    
+</html>

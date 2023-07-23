@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>change 이벤트</title>
+    </head>
+    <body>
+        
+        <h3>라디오버튼</h3>
+        
+        <h4>좋아하는 동물을 고르세요</h4>
+        <br>
+        <label><input type="radio" name="animal" value ="dog">개</label>
+        <label><input type="radio" name="animal" value ="cat" id = "cat">고양이</label>
+        <label><input type="radio" name="animal" value ="lion">사자</label>
+
+
+        <button type="button" id = "catBtn">고양이 선택</button>
+        <button type="button" id = "cancelBtn">모두 해제</button>
+
+        <h4>셀렉트 박스</h4>
+        <h4>사이트 이동</h4>
+        <select id="siteSelect">
+            <option>-- 사이트 선택--</option>
+            <option value = "naver">네이버</option>
+            <option value = "daum">다음</option>
+            <option value = "google">구글</option>
+        </select>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
+        crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function(){
+                
+                $("#siteSelect").on("change", function(){
+                    //라디오박스는 val을 집적 부여햇엇는데 설랙트박스는 자동으로된다.
+                    // let site = $("#siteSelect option:selected").val();
+                    let site = $(this).val();
+                    // alert(site);
+                    if(site == "naver")
+                    {
+                        location.href = "https://naver.com"
+                    }
+                    else if(site == "daum")
+                    {
+                        location.href = "https://daum.net"
+                    }
+                    else if(site == "google")
+                    {
+                        location.href = "https://google.com"
+                    }
+                    
+
+
+                });
+
+                $("#cancelBtn").on("click", function(){
+                    $("input[name='animal']").prop("checked", false);
+                });
+
+                $("#catBtn").on("click", function(){
+                    // $("#cat").attr("checked", true); attr은 동적인걸 컨트롤 잘 못하기떄문에 최초클릭만해주고 그 이후에는 동작을 잘 안한다.
+                    $("#cat").prop("checked", true);
+                });
+
+
+                //animal의 묶음중
+                $("input[name='animal']").on("change", function(){
+                    // let animal = $("input[name='animal']:checked").val();
+                    let animal = $(this).val();
+                    alert(animal);
+
+                });
+
+                
+
+            });
+
+            
+        </script>
+    </body>
+</html>

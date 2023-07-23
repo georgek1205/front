@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>날짜 입력 - 외부라이브러리</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        
+    </head>
+    <body>
+
+        <label>날짜 선택</label><input type="text" id="date">
+        <br>
+        <label>날짜 선택(옵션)</label><input type="text" id = "dateOption">
+        <br>
+        <label>날짜 선택(이벤트)</label><input type="text" id = "dateEvent">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#date").datepicker();
+
+                $("#dateOption").datepicker({
+                    // dateFormat:"yy년 mm월 dd일"
+                    dateFormat:"y년 m월 d일",
+                    changeYear:true,
+                    changeMonth:true,
+                    
+                });
+
+                $("#dateEvent").datepicker({
+                    dateFormat:"yy-mm-dd",
+                    //데이터피커가 보여지기 직전 이벤트
+                    beforeShow:function(){
+                        alert("데이트피커가 곧뜸");
+                    },
+                    //데이트피커 날짜가 선택되었을때 이벤트
+                    onSelect:function(dateText){
+                        alert("날짜가 선택되었다 " + dateText);
+                    },
+                    onClose:function(dateText){
+                        alert("데이트피커가 닫힌다 " + dateText);
+                    }
+                });
+            });
+
+
+        </script>
+    </body>
+</html>

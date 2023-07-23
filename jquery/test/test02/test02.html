@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>change 연습문제</title>
+        <style>
+            .box
+            {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>1.색바꾸기</h3>
+        <div class="box" id ="box"></div>
+        <select id = "colorSelect">
+            <option>--색 선택--</option>
+            <option value = "blue">--파란색--</option>
+            <option value = "red">--빨간색--</option>
+            <option value = "green">--녹색--</option>
+        </select>
+
+        <h3>2. 입력 바꾸기</h3>
+        <label><input type="radio" name = "job" value="student">학생</label>
+        <label><input type="radio" name = "job" value="salaryman">직장인</label><br>
+        <label><div id = "textarea">학교명</div><input type="text"></label>
+
+
+        <h3>3.전체선택</h3>
+        <label>전체선택<input type="checkbox" id = "selectAll"></label><br>
+        <label>개인정보 활용 동의<input type="checkbox" name = "agree"></label>
+        <label>서비스 이용 동의<input type="checkbox" name = "agree"></label>
+        <label>마케팅 활용 동의<input type="checkbox" name = "agree"></label>
+
+        
+        <h3>4.길이제한</h3>
+        <input type="text" id = "wordLimit">
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
+        crossorigin="anonymous"></script>
+        
+        
+        <script>
+            //문제1
+            $(document).ready(function() {
+
+                $("#colorSelect").on("change", function(){
+                if($(this).val() == "red")
+                {
+                    $("#box").css("background-color", "red")
+                }
+                else if($(this).val() == "blue")
+                {
+                    $("#box").css("background-color", "blue")
+                }
+                else if($(this).val() == "green")
+                {
+                    $("#box").css("background-color", "green")
+                }
+                 });
+            //문제2
+            
+                $("input[name='job']").on("change", function(){
+                    if($(this).val() == "student")
+                    {
+                        $("#textarea").text("학교명");
+                    }
+                    else if($(this).val() == "salaryman")
+                    {
+                        $("#textarea").text("회사명");
+                    }
+                });
+
+
+            });
+            
+            //문제3
+                $("#selectAll").on("click", function(){
+                    if($(this).is(":checked"))
+                    {
+                        $("input[name='agree']").prop("checked", true);
+                    }
+                    else
+                    {
+                        $("input[name='agree']").prop("checked", false);
+                    }
+                    
+                });
+
+            //문제4
+                $("#wordLimit").on("input",function(){
+                    if($(this).val().length > 5)
+                    {
+                        alert("다섯자를 초과하여 입력할 수 없습니다.");
+                        $(this).val($(this).val().substring(0,5));
+                    }
+
+
+                });
+
+
+        </script>
+    </body>
+</html>

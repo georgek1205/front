@@ -1,0 +1,61 @@
+#wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header
+{
+    height: 100px;
+}
+
+nav
+{
+    height: 40px;
+    background-color:rgb(212, 108, 34);
+}
+
+article
+{
+    height: 800px;
+
+}
+
+.mainpic
+{
+    height: 500px;
+    
+}
+
+.information
+{
+    height: 300px;
+    background-color:rgb(206, 102, 27);
+}
+
+.reservation
+{
+    background-color:rgb(151, 74, 19);
+}
+
+.selectRegister
+{
+    height: 50px;
+}
+
+.inputInfo
+{
+    background-color:rgb(206, 102, 27);
+}
+
+.login
+{
+    height: 400px;
+    width: 500px;
+}
+
+
+footer
+{
+    height: 100px;
+}
