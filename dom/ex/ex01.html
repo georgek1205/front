@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>dom tree</title>
+    </head>
+    <body>
+        <h1>일기</h1>
+        <div>
+            <div>날짜 : 2023년 7월 12일</div>
+            <div>날씨 : 흐림</div>
+        </div>
+        <div id = "contents">
+            DOM Tree를 배웠다. <br>
+            나무라고 하는데 나무같지고 않고 뭔지 모르겠다.
+        </div>
+
+
+        <script>
+            let contentsDiv = document.getElementById("contents");
+            console.log(contentsDiv);
+            contentsDiv.innerHTML = "아니야!! 이제 알겠어!!";
+
+            let h1tags = document.getElementsByTagName("h1");
+            //태그는 배열처럼 저장된다
+            console.log(h1tags);
+            h1tags[0].innerHTML = "다이어리";
+        </script>
+    </body>
+</html>
