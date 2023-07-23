@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javascript 기본 문법</title>
+    </head>
+    <body>
+        <script>
+            //주석
+            
+            // alert("Hello World");
+            //변수
+            //let = 지역변수
+            //
+            let number = 100;
+            console.log("number = " + number);
+
+            let string = "hello";
+            console.log(string);
+
+            //조건문
+            if(number == 100)
+            {
+                console.log("100이다");
+                //전역변수 : var
+                var tmp1 = 10;
+                let tmp2 = 10;
+            }
+
+            console.log(tmp1);
+            // console.log(tmp2);
+
+            number = 100;
+            let stringNumber = "100";
+            // js는 이둘이 같다고 한다.
+            if(number == stringNumber)
+            {
+                console.log("number와 stringNumber이 같다"); 
+            }
+            // ===는 타입까지 비교
+            if(number === stringNumber)
+            {
+                console.log("number와 stringNumber의 타입이 같다");
+            }
+
+            //자바는 기본적으로 null로 초기화를 자동으로 시켜주는데, 자바스크립트는 undefined가 쓰인다.
+            let empty; 
+            console.log(empty);
+
+            let nullVar = null;
+            console.log(nullVar);
+
+            if(empty == undefined)
+            {
+                console.log("empty는 비어 있다");
+            }
+
+            if(nullVar == null)
+            {
+                console.log("nullVa은 null이다");
+            }
+
+            if(empty == nullVar)
+            {
+                console.log("empty와 nullVar은 같다");
+            }
+
+            if(empty === undefined)
+            {
+                console.log("empty는 정확히 undefined");
+            }
+            
+            if(nullVar === null)
+            {
+                console.log("nullVar은 정확히 null");
+            }
+
+            //undefined와 null은 같은거라고 여겨지기때문.
+            if(empty == undefined || empty == null)
+            {
+                console.log("empty는 비어있다");
+            }
+
+            if(empty == null)
+            {
+                console.log("empty는 비어있다.")
+            }
+
+
+
+        </script>
+
+
+    </body>
+</html>

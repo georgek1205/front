@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>연습문제 3</title>
+    </head>
+    <body>
+        <script>
+           //문제1
+           var userid = "my_id_very_simple";
+           if(userid.length > 8)
+           {
+                // alert("id는 8자를 넘길 수 없습니다. " + userid.substring(0, 8));
+           }
+
+           //문제2
+           var path = "/Users/master/Document/image/city.jpg";
+           let arr = path.split("/");
+           for(let word of arr)
+           {
+                if(word.includes("jpg"))
+                {
+                    console.log(word);
+                }
+           }
+           //문제3
+           var info = {
+                "name":"김 인규",
+                "phoneNumber":"01012345678",
+                "introduce":"    안녕하세요. 저는 기분이 좋네요.  "
+            };
+            console.log("이름 : " + info.name.replace(/ /g, "") + 
+            " 전화번호 : "+info.phoneNumber.substring(0,3) + "-" + info.phoneNumber.substring(3,7) + "-" + info.phoneNumber.substring(7, 11)
+            + " 소개 : " + info.introduce.trim());
+            
+
+
+            //문제4
+            var membersString = "루피:19931005,조로:19890513,나미:19970705,쵸파:20040932";
+            let member = membersString.split(",");
+            let newMember= [];
+            //이부분에 왜 let tempMember= {};가잇으면 안되는지.
+
+            for(let arr of member)
+            {
+                //객체(dictionary)가 새로생성이안되면, 해쉬영역에 그냥 똑같은 객체를 가르키고있기때문에
+                //뭐 복사가되서 덮어쓰기가된다는 개념으로 생각하지말자. 그래서, 객체를 새로 생성해주지않으면 해쉬는
+                //똑같은 객체를 가르키고있기때문에 초기화를 해줘야한다.
+                let tempMember= {};
+                let temp = arr.split(":");
+                tempMember["name"] = temp[0];
+                tempMember["birth"] = temp[1];
+                // tempMember = {"name":temp[0],"birth":temp[1]};
+                newMember.push(tempMember);
+            }
+            console.log(newMember);
+
+            // 문제5
+            for(let map of newMember)
+            {
+                for(let key in map)
+                {
+                if(key === "birth" && map[key].charAt(5) == 7)
+                    {
+                    console.log(map.name);
+                    }
+                }
+            }
+            
+
+        </script>
+    </body>
+</html>

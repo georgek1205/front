@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트 응용</title>
+    </head>
+    <body>
+        <script>
+            let text = "I must do what I want to do";
+
+            //문자열길이
+            console.log(text.length);
+            
+            //특정 인덱스 문자얻기
+            console.log(text.charAt(10));
+
+            //특정 문자열이 어느위치에 있는지 확인
+            console.log(text.indexOf("what"));
+            console.log(text.indexOf("new"));
+
+            //특정 문자열이 존재하는지
+            console.log(text.includes("must"));
+            if(text.includes("must"))
+            {
+                console.log("must는 있다");
+            }
+
+            console.log(text.replace("I", "You"));
+            console.log(text);
+
+            // 정규 표현식
+            console.log(text.replace(/I/g, "You"));
+
+            //문자열 자르기
+            console.log(text.substring(2, 6));
+
+            //문자열 쪼개기
+            let parts = text.split(" ");
+            console.log(parts[2]);
+            console.log(parts);
+
+            //웹에서많이사용되는규칙(중요)
+            //문자열 앞뒤 공백 제거
+            let userId = "       kimkimkim    ";
+            console.log(userId);
+            console.log(userId.trim());
+
+
+        </script>
+    </body>
+</html>
