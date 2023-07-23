@@ -1,0 +1,45 @@
+#wrap
+{
+    width: 1200px;
+}
+
+header
+{
+    width: 1200px;
+    height: 100px;
+    background-color: bisque;
+}
+
+section > article
+{
+    width: 1000px;
+    height: 700px;
+    background-color: cadetblue;
+}
+
+section > aside
+{
+    width: 200px;
+    height: 700px;
+    background-color: coral;
+}
+
+
+footer > .edge-footer
+{
+    width: 150px;
+    height: 70px;
+    background-color: darkkhaki;
+}
+
+footer > .middle-footer
+{
+    width: 900px;
+    height: 70px;
+    background-color: rgb(33, 209, 103);
+}
+
+.flex-row
+{
+    display: flex;
+}
