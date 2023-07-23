@@ -1,0 +1,45 @@
+#wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo
+{
+    height: 100px;
+}
+
+.banner
+{
+    overflow: hidden;
+}
+
+header
+{
+    height: 100px;
+}
+
+section
+{
+    height: 500px;
+}
+
+.subcontents
+{
+    height: 250px;
+}
+
+.subcontents2
+{
+    height: 250px;
+}
+
+footer > .edgefooter
+{
+    height: 100px;
+}
+
+footer > .midfooter
+{
+    height: 100px;
+}

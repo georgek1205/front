@@ -1,0 +1,29 @@
+#wrap
+{
+    width: 1200px;
+}
+
+.topmenu
+{
+    height: 100px;
+}
+
+.menu
+{
+    height: 50px;
+}
+
+.main-contents > .contents
+{
+    height: 500px;
+}
+
+.main-contents > .sub-contents
+{
+    height: 500px;
+}
+
+footer
+{
+    height:80px;
+}

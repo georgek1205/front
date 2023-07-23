@@ -1,0 +1,53 @@
+#wrap
+{
+    width:1200px;
+}
+
+header
+{
+    height: 100px;
+}
+
+.main-menu
+{
+    height: 40px;
+    background-color: lightgray;
+}
+
+.click:hover
+{
+    background-color: aqua;
+}
+
+header > .sub-menu
+{
+    height: 100px;
+}
+
+.contents > .main-contents
+{
+    height: 500px;
+}
+
+.contents > .sub-contents
+{
+    height: 450px;
+}
+
+
+header > .search
+{
+    height: 100px;
+}
+
+header > .logo
+{
+    height: 100px;
+}
+
+footer
+{
+    height: 100px;
+}
+
+

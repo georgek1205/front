@@ -1,0 +1,36 @@
+#wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header
+{
+    height: 100px;
+}
+
+section
+{
+    height: 600px;
+}
+
+.main-contents
+{
+    width: 1050px;
+    background: rgb(219, 217, 217);
+}
+
+.container
+{
+    max-width: 1050px;
+}
+
+.main-menu
+{
+    width: 150px;
+}
+
+footer
+{
+    height: 100px;
+}

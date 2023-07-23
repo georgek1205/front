@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>쇼핑몰</title>
+    </head>
+    <body>
+    <div id = "wrap">
+        <header class="d-flex">
+            <div class = "col-3 p-0 d-flex align-items-end">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">검색</span>
+                </div>
+            </div>
+            <div class = "logo col-6 d-flex justify-content-center">
+                <div>
+                    <div class = "display-4">상맨</div>
+                    <div>상남자의 패션몰</div>
+                </div>
+            </div>
+            <nav class = "sub-menu col-3 p-0 d-flex align-items-end">
+                <ul class = "nav nav-fill w-100">
+                    <li class = "nav-item"><a href="#" class = "nav-link small text-secondary click">로그인</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link small text-secondary click">회원가입</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link small text-secondary click">고객센터</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link small text-secondary click">장바구니</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class = "main-menu">
+            <ul class = "nav nav-fill w-100">
+                <li class = "nav-item"><a href="#" class = "nav-link click">Outer</a></li>
+                <li class = "nav-item"><a href="#" class = "nav-link click">Top</a></li>
+                <li class = "nav-item"><a href="#" class = "nav-link click">Outer</a></li>
+                <li class = "nav-item"><a href="#" class = "nav-link click">Shirt</a></li>
+                <li class = "nav-item"><a href="#" class = "nav-link click">Pants</a></li>
+            </ul>
+        </nav>
+        <!-- 리스트로 굳이 안해도되고, 그냥 한 매뉴(사진, 설명) 항목을 div로 묶어도된다. 그런 div들을 묶는 한세트르 한들고
+        d-flex를 해줘도된다. 중간밑줄은 그냥 <del>문자열</del> 이렇게 그어줘도된다. 나는 그냥 <p>로 문단개념으로
+            생각을했지만, 그냥 간단하게 <div>해도 알아서 줄바꿈이 되기때문에 간단하게 각 줄마다 <div>를 쓰자-->
+        <div class = "contents">
+            <img class ="w-100 main-contents" src="test05_main_banner.jpg" alt="메인베너">
+            <div class = "sub-contents">
+                <h3>Best Seller</h3>
+                <nav>
+                    <ul class = "nav nav-fill w-100 d-flex justify-content-between">
+                        <li class = "image"><img src="test05_best1.jpg" alt="배너1">
+                            <p>
+                                <b>리얼 가죽무스탕</b><br>
+                                <span style="text-decoration: line-through">87,000원</span><br>
+                                55,000원
+                            </p>
+                        </li>
+                        <li class = "image"><img src="test05_best2.jpg" alt="배너1">
+                            <p>
+                                <b>[1 + 1] 기본 버튼 반팔티</b><br>
+                                <span style="text-decoration: line-through">15,000원</span><br>
+                                7,000원
+                            </p>
+                        </li>
+                        <li class = "image"><img src="test05_best4.jpg" alt="배너1">
+                            <p>
+                                <b>정장 스타일 무지 조끼</b><br>
+                                <span style="text-decoration: line-through">45,000원</span><br>
+                                40,000원
+                            </p>
+                        </li>
+                        <li class = "image"><img src="test05_best5.jpg" alt="배너1">
+                            <p>
+                                <b>스키니핏 씨블루 정장 자켓</b><br>
+                                <span style="text-decoration: line-through">53,000원</span><br>
+                                45,000원
+                            </p>
+                        </li>
+                        <li class = "image"><img src="test05_best3.jpg" alt="배너1">
+                            <p>
+                                <b>프리미엄 올라운드 데님셔츠</b><br>
+                                <span style="text-decoration: line-through">33,000원</span><br>
+                                30,000원
+                            </p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <footer>
+            <div class = "text-center small text-secondary">
+                회사 : Sangman 대표 : 김상남<br>
+                주소: 서울시 종로구 아무개로 32번길 93 패션타운 806호<br>
+                사업자번호:1010101010-1010101000<br>
+                Copyright 2021. sangman All Rights Reserved.
+            </div>
+            
+        </footer>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

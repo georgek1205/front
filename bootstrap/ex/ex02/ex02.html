@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>부트스트랩</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <!-- <div class = "text-center font-weight-bold text-success">부트스트랩 테스트</div> -->
+        <div id = "wrap">
+            <header>
+                <!-- Marondal을 밑으로 내리게 외부영역을줄수있다(마진) m-0~5-->
+                <!-- mt mb ml mr -->
+                <!-- 근데 mt-3을해도 아무변화가 없어보이는게 header도 엮여있어서
+                마진상쇄가 발생한다. header도 밑으로 같이 내려가게되서. -->
+                <!-- 그래서 패딩(내부여백)을 한번 줘보자 p-0~5 
+                마진(외부여백)이랑 패딩(내부여백)은 다르다-->
+                <h1 class = "text-center pt-4">Marondal</h1>
+            </header>
+            <nav class = "main-menu bg-warning d-flex align-items-center"> <!--d-flex 는 가로 배치말고도 다른 배치기능을 구현하고싶을때도쓴다. w-100을 밑에안쓰면 글자크기에 맞춰 fill한다-->
+                <ul class = "nav nav-fill w-100">
+                    <li class = "nav-item"><a href="#" class = "nav-link text-dark font-weight-bold">메일</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link text-dark font-weight-bold">카페</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link text-dark font-weight-bold">블로그</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link text-dark font-weight-bold">지식인</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link text-dark font-weight-bold">쇼핑</a></li>
+                    <li class = "nav-item"><a href="#" class = "nav-link text-dark font-weight-bold">부동산</a></li>
+                </ul>
+            </nav>
+            <section class = "contents d-flex">
+                <!-- 100% 기준 비율 w-0 25 50 75 100 이 5개의 숫자만 사용가능 h-0 25 50 ... 도 가능.-->
+                <!-- 12칸 중에 몇간을 차지할지 col-0 1 2 3 ... 12 근데 col을쓰면 자동 여백이 생긴다-->
+                <article class = "main-contents col-8">
+                    <div class = "d-flex mt-4">
+                        <div class = "mr-3">
+                            <img width=150 src="https://imgnews.pstatic.net/image/109/2023/07/06/0004883839_001_20230706150005920.jpg?type=w647" alt="김민재기사">
+                        </div>
+                        <div>
+                            <div class = "text-info font-weight-bold">
+                                스포츠
+                            </div>
+                            <div class = "font-weight-bold">
+                                '김민재 영입 진심' 뮌헨, 메디컬 테스트 서울서 예정...
+                            </div>
+                            <div class = "small mt-1">
+                                김민재(나폴리)가 훈련소 퇴소 후 국내에서 메디컬 테스트를 받고 바이에른 뮌헨 입단 절차를 마무리 한다. 
+                                스카이스포츠 독일 플로리안 플레텐베르크 기자는 6일(이하 한국시간) "김민재의 바이에른 뮌헨 
+                                입단 직전이다. 확정됐다. 마지막 중요 세부 사항들이 최근 며칠 안에 명확해졌다"라며 바이에른 
+                                뮌헨행이 결정됐다고 밝혔다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "d-flex mt-4">
+                        <div class = "mr-3">
+                            <img width=150 src="https://imgnews.pstatic.net/image/076/2023/07/06/2023070701000455400051002_20230706154808794.jpg?type=w647" alt="음바페">
+                        </div>
+                        <div>
+                            <div class = "text-info font-weight-bold">
+                                스포츠
+                            </div>
+                            <div class = "font-weight-bold">
+                                "재계약 아니면 이적. 선택해!" PSG의 최후통첩.
+                            </div>
+                            <div class = "small mt-1">
+                                파리 생 제르망(PSG)가 킬리안 음바페에게 최후통첩을 했다.
+                                핵심은 음바페는 올 시즌 PSG에 머물기 위해 재계약을 해야 하며, 이적료 없이 그를 떠나보낼 일은 없다는 것이다.
+                                영국 BBC는 6일(이하 한국시각) 'PSG 알 켈라이피 회장은 단호한 입장을 보였다. 킬리안 음바페가 잔류를 원하면 
+                                새로운 계약에 서명해야 한다. 세계 최고의 선수를 공짜로 보낼 수 없다고 했다'고 보도했다.
+                                음바페는 지난해 PSG와 3년 계약을 했다. 당시 커다란 이슈가 됐다.
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <aside class = "side-contents col-4">
+                    <div class = "login-box mt-3">
+                        <div class="small">marondal을 더욱 안전하고 편리하게 이용하세요</div>
+                        <button type = "button" class = "btn btn-warning btn-block mt-3">Marondal 로그인</button>
+                        <div class = "d-flex justify-content-between mt-3">
+                            <div>아이디 / 비밀번호 찾기</div>
+                            <div>회원가입</div>
+                        </div>
+                        <div class ="mt-4">
+                            <img alr = "광고" class= "w-100" src="https://ssl.pstatic.net/melona/libs/1456/1456484/9486f8691b0dc84770fc_20230619154325645.jpg">
+                        </div>
+
+                    </div>
+                </aside>
+
+            </section>
+            <footer class = "text-center pt-3 small text-secondary">
+                <div>
+                    Copyright © marondal 2021
+                </div> 
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

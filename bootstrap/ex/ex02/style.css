@@ -1,0 +1,42 @@
+/* .text
+{
+    text-align: center;
+} */
+
+#wrap
+{
+    width:1200px;
+    margin:0 auto;
+}
+
+header
+{
+    height: 100px;
+}
+
+.main-menu
+{
+    height: 50px;
+}
+
+.main-contents > .contents1
+{
+    height: 250px;
+}
+
+.main-contents > .contents2
+{
+    height: 250px;
+}
+
+
+.contents > .side-contents
+{
+    /* width: 400px; */
+    height: 500px;
+}
+
+footer
+{
+    height: 70px;
+}
